@@ -31,6 +31,7 @@ $tablet: 992px;
 
 body {
     font-family: 'Dosis', sans-serif;
+    text-transform: capitalize;
 
     .menu {
         display: none;
@@ -136,7 +137,7 @@ body {
                 text-transform: uppercase;
 
                 @include tablet {
-                    margin-top: 7%;
+                    margin-top: 4%;
                 }
             }
         }
@@ -182,6 +183,51 @@ body {
                     font-size: 25px;
                     color: #225d86;
                 }
+            }
+        }
+    }
+
+    ._6 {
+        
+        .hard {
+            border: 1px dotted gray;
+
+            h2 {
+                padding: 0.5em 0 0.5em 0;
+            }
+        }
+
+        .soft {
+            border: 1px dotted gray;
+
+            h2 {
+                padding: 0.5em 0 0.5em 0;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+    }
+
+    ._7 {
+        background-color: color(dark);
+
+        h2 {
+            margin: auto;
+            font-size: 2rem;
+        }
+
+        .row {
+            box-shadow: 5px 5px 10px 5px;
+
+            .template {
+                border-right: 1px solid color(dark);
+            }
+    
+            .app {
+                border-left: 1px solid color(dark);
             }
         }
     }

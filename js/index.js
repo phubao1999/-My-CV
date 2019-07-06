@@ -31,3 +31,75 @@ $(document).ready(function () {
         },800)
     });
 });
+
+$('.menu .nav-center ul li:nth-child(1)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    },800)
+});    //Click Menu
+
+$('.menu .nav-center ul li:nth-child(2)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._5').offset().top - 55
+    },800)
+});    //Click Menu
+
+$('.menu .nav-center ul li:nth-child(3)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._6').offset().top - 60
+    },800)
+});    //Click Menu
+
+$('.menu .nav-center ul li:nth-child(4)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._7').offset().top - 60
+    },800)
+});    //Click Menu
+
+$('.menu .nav-center ul li:nth-child(5)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._8').offset().top - 65
+    },800)
+});    //Click Menu 
+
+// ====================
+
+$('.menuForPhone .nav_chil ul li:nth-child(1)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    },800)
+});    //Click Menu
+
+$('.menuForPhone .nav_chil ul li:nth-child(2)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._5').offset().top - 55
+    },800)
+});    //Click Menu
+
+$('.menuForPhone .nav_chil ul li:nth-child(3)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._6').offset().top - 58
+    },800)
+});    //Click Menu
+
+$('.menuForPhone .nav_chil ul li:nth-child(4)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._7').offset().top - 58
+    },800)
+});    //Click Menu
+
+$('.menuForPhone .nav_chil ul li:nth-child(5)').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('._8').offset().top - 58
+    },800)
+});    //Click Menu 

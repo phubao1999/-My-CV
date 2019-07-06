@@ -157,6 +157,22 @@ body .menuForPhone .nav_chil.show {
           transform: translateX(0px);
 }
 
+body ._3 section {
+  height: 100vh;
+}
+
+body ._3 section video {
+  height: 100vh;
+}
+
+body ._3 section h3 {
+  margin-top: 1em;
+}
+
+body ._3 section .cv {
+  margin-top: 1.5em;
+}
+
 body ._4 {
   margin-top: 50px;
   background-image: url("../../media/coding-a-background-animation.png");
@@ -235,7 +251,8 @@ body ._7 {
 
 body ._7 h2 {
   margin: auto;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 body ._7 .row {
@@ -247,8 +264,63 @@ body ._7 .row .template {
   border-right: 1px solid #80808030;
 }
 
+body ._7 .row .template ._1project h5 {
+  font-weight: 700;
+}
+
 body ._7 .row .app {
   border-left: 1px solid #80808030;
+}
+
+body ._8 #googleMap {
+  border: 2px solid #80808030;
+}
+
+body ._8 .contact {
+  background-color: #80808030;
+  -webkit-box-shadow: -5px 0px 15px 5px;
+          box-shadow: -5px 0px 15px 5px;
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  body ._8 .contact {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: (max-width: 992px)) {
+  body ._8 .contact {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: (max-width: 1200px)) {
+  body ._8 .contact {
+    margin-top: 0;
+  }
+}
+
+body ._8 .contact ul li {
+  list-style-type: none;
+  margin-top: 3rem;
+  color: #312424;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+body ._8 .contact ul li i {
+  color: #3498db;
+  font-size: 1.8em;
+}
+
+body footer {
+  background-color: #312424;
+  color: #ffeaea;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px 0px 15px 0px;
 }
 
 body .backtotop {

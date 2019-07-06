@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+body .menu {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  body .menu {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 3px 7px 0px;
+            box-shadow: 0px 3px 7px 0px;
+    display: block;
+  }
+}
+
+body .menu .nav-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  background: #3498db;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .menu .nav-desktop .avatar img {
+  border-radius: 50%;
+  border: 1px solid #0361a2;
+  height: 80px;
+  width: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: auto;
+}
+
+body .menu .nav-desktop .avatar img.effect-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+body .menu .nav-desktop .nav-center ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 15px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .menu .nav-desktop .nav-center ul li.effect-list {
+  margin: 10px;
+}
+
+body .menu .nav-desktop .nav-right ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 15px;
+  color: white;
+  font-size: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .menu .nav-desktop .nav-right ul li a {
+  color: white;
+  margin-right: 30px;
+}
+
+body .menu .nav-desktop .nav-right ul li.effect-list {
+  margin: 0px;
+}
+
+body .menu .nav-desktop.effect-menu {
+  background: #094973;
+}
+
+body .menuForPhone {
+  visibility: visible;
+}
+
+@media (min-width: 992px) {
+  body .menuForPhone {
+    visibility: hidden;
+  }
+}
+
+body .menuForPhone .nav_respon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #3498db;
+  color: #dfe6e9;
+}
+
+body .menuForPhone .nav_chil {
+  background: #225d86;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+  z-index: -999;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .menuForPhone .nav_chil ul li {
+  color: #fff;
+  list-style-type: none;
+  padding: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10%;
+  text-transform: uppercase;
+}
+
+@media (min-width: (max-width: 992px)) {
+  body .menuForPhone .nav_chil ul li {
+    margin-top: 7%;
+  }
+}
+
+body .menuForPhone .nav_chil.show {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+body ._4 {
+  margin-top: 50px;
+  background-image: url("../../media/coding-a-background-animation.png");
+  background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+  body ._4 {
+    margin-top: 0;
+  }
+}
+
+body ._5 {
+  background-color: #80808030;
+}
+
+body ._5 img {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body ._5 img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+body ._5 .thongtin {
+  border: 1px solid #0361a2;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  font-size: 18px;
+}
+
+body ._5 .thongtin ul li {
+  list-style-type: none;
+}
+
+body ._5 .thongtin ul li i {
+  font-size: 25px;
+  color: #225d86;
+}
+
+body .backtotop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .backtotop.show {
+  visibility: visible;
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,202 @@
+$colors : (
+    primary: #3498db,
+    darkPrimary: #094973,
+    dark: #80808030,
+    secondPrimary: #225d86
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name )
+}
+
+$phone: 600px;
+$tablet: 992px;
+
+@mixin tablet {
+    @media (min-width: #{$phone} and (max-width: #{$tablet})){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$tablet}){
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+
+    .menu {
+        display: none;
+
+        @include desktop {
+            transition: 0.5s;
+            box-shadow: 0px 3px 7px 0px;
+            display: block;
+        }
+
+        .nav-desktop {
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            background: color(primary);
+            transition: 0.5s;
+
+            .avatar img {
+                border-radius: 50%; 
+                border: 1px solid #0361a2;
+                height: 80px;
+                width: 80px;
+                transition: 0.5s;
+                margin: auto;
+            }
+
+            .avatar img.effect-img{
+                width: 50px;
+                height: 50px;
+                margin-top: 5px;
+            }
+
+            .nav-center ul li {
+                display: inline-block;
+                list-style-type: none;
+                margin: 15px 20px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 600;
+                transition: 0.5s;
+            }
+            .nav-center ul li.effect-list{
+                margin: 10px;
+            }
+
+            .nav-right ul li{
+                display: inline-block;
+                list-style-type: none;
+                margin-top: 15px;
+                color: white;
+                font-size: 30px;
+                transition: 0.5s;
+
+                a {
+                    color: white;
+                    margin-right: 30px; 
+                }
+            }
+            .nav-right ul li.effect-list{
+                margin: 0px;
+            }
+        }
+
+        .nav-desktop.effect-menu {
+            background: color(darkPrimary);
+        }
+    }
+
+    .menuForPhone {
+        visibility: visible;
+
+        @include desktop {
+            visibility: hidden;
+        }
+
+        .nav_respon {
+            display: flex;
+            justify-content: space-between;
+            background: #3498db;
+            color: #dfe6e9;
+        }
+
+        .nav_chil {
+            background:#225d86;
+            transition: 0.4s;
+            transform: translateX(1000px);
+            z-index: -999;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            ul li {
+                color: #fff;
+                list-style-type: none;
+                padding: 5px;
+                font-weight: 500;
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 10%;
+                text-transform: uppercase;
+
+                @include tablet {
+                    margin-top: 7%;
+                }
+            }
+        }
+
+        .nav_chil.show {
+            transform: translateX(0px);
+        }
+    }
+
+    ._4 {
+        margin-top: 50px;    
+        background-image: url('../../media/coding-a-background-animation.png');
+        background-attachment: fixed;       
+        @include desktop {
+            margin-top: 0;
+        }        
+    }
+
+    ._5 {
+        background-color: color(dark);
+
+        img {
+            transition: 0.4s;
+
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+
+        .thongtin {
+            border: 1px solid #0361a2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            font-size: 18px;
+
+            ul li {
+                list-style-type: none;
+
+                i {
+                    font-size: 25px;
+                    color: #225d86;
+                }
+            }
+        }
+    }
+
+    .backtotop {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

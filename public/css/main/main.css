@@ -110,7 +110,7 @@ body .menuForPhone .nav_respon {
 }
 
 body .menuForPhone .nav_chil {
-  background: #225d86;
+  background: #225d86d6;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-transform: translateX(1000px);
@@ -336,5 +336,15 @@ body .backtotop {
 body .backtotop.show {
   visibility: visible;
   opacity: 1;
+}
+
+body ._4, body ._5, body ._6, body ._7, body ._8, body footer {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body ._4.aaa, body ._5.aaa, body ._6.aaa, body ._7.aaa, body ._8.aaa, body footer.aaa {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 /*# sourceMappingURL=main.css.map */

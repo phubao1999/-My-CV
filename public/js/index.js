@@ -2,6 +2,12 @@ $(document).ready(function () {
     $('.fas.fa-bars').click(function (e) { 
         e.preventDefault();
         $('.nav_chil').toggleClass('show');
+        $(this).addClass('fas fa-times');
+        $('.fa-times').click(function (e) { 
+            e.preventDefault();
+            $(this).toggleClass('fa-times');
+        });
+        $('._4, ._5, ._6, ._7, ._8, footer').toggleClass('aaa');
     });
 });   //Menu
 
